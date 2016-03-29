@@ -28,6 +28,7 @@
 
   <link rel="stylesheet" href="/css/styles.css">
   
+  
 
 </head>
 
@@ -183,6 +184,20 @@
 
 
 <script src="/js/script.js"></script>
+<script src="/js/bootstrap_techstack.js"></script>
+
+<script type="text/javascript">
+$(function() {
+  //load frontend techstack
+  $.getJSON("/data/f-techstack.json", function(data) {
+    $("#f-techstack").techstack(data);
+  });
+  //load backend techstack
+  $.getJSON("/data/b-techstack.json", function(data) {
+    $("#b-techstack").techstack(data);
+  });
+})
+</script>
 
 </body>
 </html>

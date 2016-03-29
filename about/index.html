@@ -5,16 +5,16 @@
   
   <title>about | mrn4nd3rs0n</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hi, I am Nick Anderson. I am a software engineer from Milwaukee, WI. I work for Goodwill Industries of South Eastern Wisconsin. I design and maintain systems that support more than 60 retail locations">
+  <meta name="description" content="Hi, I am Nick Anderson. I am a software engineer from Milwaukee, WI. I work for Goodwill Industries of South Eastern Wisconsin. I design and maintain systems that support more than 60 retail locat">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="mrn4nd3rs0n">
-<meta property="og:description" content="Hi, I am Nick Anderson. I am a software engineer from Milwaukee, WI. I work for Goodwill Industries of South Eastern Wisconsin. I design and maintain systems that support more than 60 retail locations">
-<meta property="og:updated_time" content="2016-03-17T15:21:21.544Z">
+<meta property="og:description" content="Hi, I am Nick Anderson. I am a software engineer from Milwaukee, WI. I work for Goodwill Industries of South Eastern Wisconsin. I design and maintain systems that support more than 60 retail locat">
+<meta property="og:updated_time" content="2016-03-29T16:11:49.948Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about">
-<meta name="twitter:description" content="Hi, I am Nick Anderson. I am a software engineer from Milwaukee, WI. I work for Goodwill Industries of South Eastern Wisconsin. I design and maintain systems that support more than 60 retail locations">
+<meta name="twitter:description" content="Hi, I am Nick Anderson. I am a software engineer from Milwaukee, WI. I work for Goodwill Industries of South Eastern Wisconsin. I design and maintain systems that support more than 60 retail locat">
   
     <link rel="alternate" href="/atom.xml" title="mrn4nd3rs0n" type="application/atom+xml">
   
@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
 
   <link rel="stylesheet" href="/css/styles.css">
+  
   
 
 </head>
@@ -105,13 +106,21 @@
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Hi, I am Nick Anderson. I am a software engineer from Milwaukee, WI. I work for Goodwill Industries of South Eastern Wisconsin. I design and maintain systems that support more than 60 retail locations. Other than work, I like to spend time with my family, excercise/lift, watch movies, play video games, and race <a href="https://en.wikipedia.org/wiki/Slot_car" target="_blank" rel="external">slot cars</a>.</p>
+         
+<!--<br/><div class="row"><div class="col-xs-6"> <img src="/images/lead_large.jpg"/></div></div><br/>-->
+
+<p>Hi, I am Nick Anderson. I am a software engineer from Milwaukee, WI. I work for Goodwill Industries of South Eastern Wisconsin. I design and maintain systems that support more than 60 retail locations. Other than work, I like to spend time with my family, excercise/lift, watch movies, play video games, and race <a href="https://en.wikipedia.org/wiki/Slot_car" target="_blank" rel="external">slot cars</a>.</p>
 <p>I am driven to design solutions that are clear, consistent, organized and exceed expectations. My approach to work and life is to keep it simple and get valuable things done.</p>
-<h3 id="Projects"><a href="#Projects" class="headerlink" title="Projects"></a>Projects</h3><h3 id="Techstack"><a href="#Techstack" class="headerlink" title="Techstack"></a>Techstack</h3><h3 id="Experience"><a href="#Experience" class="headerlink" title="Experience"></a>Experience</h3><p><strong>Goodwill Industries South Eastern Wisconsin Jan 2016 - Current</strong><br>Lead Software Engineer<br>Designing, building and maintaining several cloud API and SPA solutions that support retail business. Working to build structure and standards to foster and grow a productive development team.</p>
+<h1 id="Techstack"><a href="#Techstack" class="headerlink" title="Techstack"></a>Techstack</h1>
+
+<div class="row">   <div id="f-techstack" class="col-xs-6 col-sm-5 col-md-4">
+
+  </div>   <div id="b-techstack" class="col-xs-6 col-sm-5 col-md-4">   </div> </div> 
+<h1 id="Experience"><a href="#Experience" class="headerlink" title="Experience"></a>Experience</h1><p><strong>Goodwill Industries South Eastern Wisconsin Jan 2016 - Current</strong><br>Lead Software Engineer<br>Designing, building and maintaining several cloud API and SPA solutions that support retail business. Working to build structure and standards to foster and grow a productive development team.</p>
 <p><strong>Syslogic Inc. May 2013 - Jan 2016</strong><br>Senior Consultant<br>Designed and built several javascript front-end SPAs. Worked on a team that built and delivered mobile apps to both itunes and android. Performed security assessment and fixes to embedded software on a networked building efficiency product.</p>
 <p><strong>Buyseasons Inc. Jan 2009 - May 2013</strong><br>Software Engineer<br>Developed and designed responsive ecommerce solutions using asp.net 3.* MVC. Developed and designed client side warehouse management fulfillment solutions. Did some cool things with dynamic products and UIs that responded to product configuration.</p>
 <p><strong>Assurant Health May 2005 - Jan 2009</strong><br>Software Engineer<br>Developed and designed several asp.net 1-3.* websites. Did some cool stuff with targeted marketing campaigns and analytics. Dabbled in Microsoft content management server.  </p>
-<h3 id="Contact-me"><a href="#Contact-me" class="headerlink" title="Contact me"></a>Contact me</h3><p><a href="mailto:mrn4nd3rs0n@gmail.com" target="_blank" rel="external">mrn4nd3rs0n@gmail.com</a></p>
+<h1 id="Contact-me"><a href="#Contact-me" class="headerlink" title="Contact me"></a>Contact me</h1><p><a href="mailto:mrn4nd3rs0n@gmail.com" target="_blank" rel="external">mrn4nd3rs0n@gmail.com</a></p>
 
       
     </div>
@@ -198,6 +207,20 @@
 
 
 <script src="/js/script.js"></script>
+<script src="/js/bootstrap_techstack.js"></script>
+
+<script type="text/javascript">
+$(function() {
+  //load frontend techstack
+  $.getJSON("/data/f-techstack.json", function(data) {
+    $("#f-techstack").techstack(data);
+  });
+  //load backend techstack
+  $.getJSON("/data/b-techstack.json", function(data) {
+    $("#b-techstack").techstack(data);
+  });
+})
+</script>
 
 </body>
 </html>

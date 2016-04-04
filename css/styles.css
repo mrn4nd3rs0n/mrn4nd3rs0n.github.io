@@ -562,7 +562,8 @@ code {
 }
 
 .navbar-inverse .navbar-brand,
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-nav>li>a:visited {
   color: #999999;
   font-weight: 500;
 }
@@ -576,6 +577,13 @@ code {
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border-color: #cdddeb;
+}
+
+.menu-icon{
+  font-size: 25px;
+  margin-top: -3px;
+  padding-left: 20px;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
